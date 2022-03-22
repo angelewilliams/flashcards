@@ -2,9 +2,9 @@ const Card = require('../src/Card');
 
 
 class Turn {
-  constructor(){
-    //this.userGuess = userGuess;
-    //this.currentCard
+  constructor(userGuess, card){
+    this.userGuess = userGuess;
+    this.currentCard = card;
   }
 }
 
@@ -13,7 +13,9 @@ module.exports =
 
 
  // Your Turn class should meet the following requirements:
- // Instantiated with two arguments - a string (that represents a user’s guess to the question), and a Card object for the current card in play.
+ // Instantiated with two arguments - a string (that represents a user’s guess to the question),
+ // and a Card object for the current card in play.
+
  // returnGuess: method that returns the guess
  // returnCard: method that returns the Card
  // evaluateGuess: method that returns a boolean indicating if the user’s guess matches the correct answer on the card
