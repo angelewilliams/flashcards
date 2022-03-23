@@ -1,11 +1,10 @@
-const Card = require('../src/Card');
+// const Card = require('../src/Card');
 
 
 class Turn {
   constructor(userGuess, card){
     this.userGuess = userGuess;
     this.currentCard = card;
-    this.guessedCorrectly;
   }
   returnGuess(){
     return this.userGuess;
@@ -14,16 +13,10 @@ class Turn {
     return this.currentCard;
   }
   evaluateGuess(){
-    //maybe refactor to switch statement later
-    if(this.userGuess === this.currentCard.correctAnswer){
-      this.guessedCorrectly = true;
-    }
-    else { this.guessedCorrectly = false;}
-    return this.guessedCorrectly;
+   return this.userGuess === this.currentCard.correctAnswer;
   }
   giveFeedback(){
-    //maybe refactor to switch statement later
-    if(this.guessedCorrectly){
+    if(this.evaluateGuess()){
       return 'correct!'
     }
     return 'incorrect!'

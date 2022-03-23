@@ -21,7 +21,7 @@ describe('Turn', function() {
     expect(turn.userGuess).to.equal('flamingo');
   });
 
-  it('should store current card from input', function(){
+  it('should be able to reference current flashcard', function(){
     const card = new Card(1, 'What is the best pool floatie shape', ['donut', 'flamingo', 'pinapple pizza', 'bagel'], 'bagel');
     const turn = new Turn('flamingo', card);
     expect(turn.currentCard).to.equal(card);
