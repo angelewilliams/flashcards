@@ -5,13 +5,15 @@ class Round {
     this.deck = deckOfFlashcards;
     this.incorrectGuesses = [];
     this.turns = 0;
+    this.currentCard = this.deck.cards[0];
   }
-  returnCurrentCard(turnNum){
-    return this.deck.cards[turnNum];
+  returnCurrentCard(){
+    return this.currentCard;
   }
   takeTurn(guess){
-    const turn = new Turn(guess, this.returnCurrentCard(this.turns));
+    const turn = new Turn(guess, this.currentCard);
     this.turns++;
+    this.currentCard = this.deck.cards[this.turns]
     if(!turn.evaluateGuess()){
       this.incorrectGuesses.push(turn.currentCard.id)
     }

@@ -19,16 +19,17 @@ class Game {
       util.main(round);
   }
 
-  start(){
+  start(invoke){
     const flashCards =  [];
     prototypeQuestions.forEach((dataObj) => {
       flashCards.push(new Card (dataObj.id, dataObj.question, dataObj.answers, dataObj.correctAnswer));
     });
     const deck =  new Deck(flashCards);
     this.currentRound = new Round(deck);
-    // this.printMessage(deck, this.currentRound);
-    // this.printQuestion(this.currentRound);
-
+    if(invoke){
+      this.printMessage(deck, this.currentRound);
+      this.printQuestion(this.currentRound);
+    }
   }
 
 }

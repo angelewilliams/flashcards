@@ -1,8 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-// const data = require('./data');
-// const prototypeQuestions = data.prototypeData;
-
 
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
@@ -30,31 +27,19 @@ describe('Game', () => {
     expect(game).to.be.an.instanceOf(Game);
   });
 
-  it('start method should create Cards', () => {
-    expect(game).to.be.an.instanceOf(Game);
-  });
+  it('should create new instances of a card when game starts', () => {
+   game.start(false);
+   expect(game.currentRound.deck.cards[0]).to.be.an.instanceof(Card);
+ });
 
-  it('start method should puts Cards in a Deck', () => {
-    game.start();
+ it('should create a new instance of deck when game starts', () => {
+   game.start(false);
+   expect(game.currentRound.deck).to.be.an.instanceof(Deck);
+ });
 
-  });
+ it('should create a new instance of a round when game starts', () => {
+   game.start(false);
+   expect(game.currentRound).to.be.an.instanceof(Round);
+ });
 
-  it.skip('start method should do create a new Round', () => {
-
-  });
-
-  it('should keep track of current round', () => {
-    expect(game.currentRound).to.be.an.instanceOf(Round)
-    // game.start();
-    // expect(game.currentRound).to.equal(1);
-
-  });
-
-  // it('testData should do something', () => {
-  //   expect(game.testData()).to.equal("object")
-  // });
-
-  it.skip('something should do something', () => {
-
-  });
 });

@@ -17,24 +17,22 @@ describe('Round', () => {
   });
 
   it('should be a function', () => {
-    // const round = new Round();
     expect(Round).to.be.a('function');
   });
 
   it('should be instantiate a round', () => {
-    // const round = new Round();
     expect(round).to.be.an.instanceOf(Round);
   });
 
   it('should accept a deck as the input', () => {
-
     expect(round.deck).to.equal(deck);
   });
 
   it('returnCurrentCard should return the current card being played', () => {
-    expect(round.returnCurrentCard(round.turns)).to.equal(card1);
+    expect(round.returnCurrentCard()).to.equal(card1);
     round.takeTurn('pug');
-    expect(round.returnCurrentCard(round.turns)).to.equal(card2);
+    expect(round.returnCurrentCard()).to.equal(card2);
+    expect(round.currentCard).to.equal(card2);
   });
 
   it('takeTurn should update turns count', () => {
