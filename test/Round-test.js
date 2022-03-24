@@ -61,15 +61,11 @@ describe('Round', () => {
     round.takeTurn('Lex');
     expect(round.calculatePercentCorrect()).to.equal(34)
   });
-  ///something like round.incorrectGuesses.length divided by turns
+
   it('something should do something', () => {
     round.takeTurn('sea otter');
     round.takeTurn('spleen');
     expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!')
   });
-
-  it.skip('something should do something', () => {});
-
-  it.skip('', () =>{});
 
 });
