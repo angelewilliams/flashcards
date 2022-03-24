@@ -1,4 +1,36 @@
-# FlashCards Starter Kit
+# Flashcards
+
+## Table of Contents
+
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Using the App](#using-the-app)
+* [Language](#language)
+
+## Overview
+
+Flashcards is an initial solo project of Module 2 for the Turing School of Software and Design. The purpose of the project is to create an application where a user can play a round of flashcards with a given set of data.
+
+The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
+
+
+### Using the App
+
+Here is a quick video on how the game works.
+
+[![Flashcards Demo](insertGifhere)
+
+### Language
+
+This project was written using JavaScript.
+
+
+## Deploy Instructions
+1. Fork repo
+2. Cloned the repo down
+3. Run npm install
+4. In the terminal, run node index.js via the command line
+5. Play the game as prompetd!
 
 ## Fork This Repo
 
@@ -20,7 +52,7 @@ npm install
 
 To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+Running `node index.js` from the root of your project should result in the following message being displayed in your terminal:
 
 ```bash
 Your project is running...
@@ -67,5 +99,3 @@ npm test
 ```
 
 The test results will output to the terminal.
-
-
