@@ -11,7 +11,7 @@
 
 Flashcards is an initial solo project of Module 2 for the Turing School of Software and Design. The purpose of the project is to create an application where a user can play a round of flashcards with a given set of data.
 
-The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
+The spec for this project can be found [here](https://media.giphy.com/media/aBTF77qPL74juIKaOx/giphy.gif).
 
 
 ### Using the App
