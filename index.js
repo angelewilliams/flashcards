@@ -1,3 +1,5 @@
 // This is where your project starts.
-
-console.log('Your project is running...'); 
+//when node index.js is called we should start the game
+console.log('Your project is running...');
+//require game doc
+// creates

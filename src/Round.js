@@ -24,9 +24,8 @@ class Round {
     return percentageCorrect;
   }
   endRound(){
-    const percentageCorrect = this.calculatePercentCorrect();
-    const roundResultMessage = `** Round over! ** You answered ${percentageCorrect}% of the questions correctly!`;
-    // console.log(roundResultMessage);
+    const roundResultMessage = `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`;
+    console.log(roundResultMessage);
     return roundResultMessage;
   }
 }

@@ -17,12 +17,12 @@ describe('Round', () => {
   });
 
   it('should be a function', () => {
-    const round = new Round();
+    // const round = new Round();
     expect(Round).to.be.a('function');
   });
 
   it('should be instantiate a round', () => {
-    const round = new Round();
+    // const round = new Round();
     expect(round).to.be.an.instanceOf(Round);
   });
 
