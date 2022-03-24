@@ -44,7 +44,7 @@ describe('Game', () => {
   });
 
   it('should keep track of current round', () => {
-    expect(game.currentRound).to.equal(0)
+    expect(game.currentRound).to.be.an.instanceOf(Round)
     // game.start();
     // expect(game.currentRound).to.equal(1);
 
