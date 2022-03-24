@@ -73,21 +73,3 @@ describe('Round', () => {
   it.skip('', () =>{});
 
 });
-//notes pasted from project spec
-//All of these need to be expect statements
-//
-// round.returnCurrentCard(); // => { first card1 }
-//
-// round.turns; // => 0
-// round.turns; // => 2
-// // turns count should increase after take turn
-// round.incorrectGuesses;     // => []
-//
-// round.takeTurn('sea otter'); // => 'correct!'
-// round.takeTurn('spleen');   // => 'incorrect!'
-// //take turn should update turns
-//
-// round.incorrectGuesses;     // => [14]
-//
-// round.returnCurrentCard(); // => { id: 12,}
-// round.calculatePercentCorrect(); // => 50
