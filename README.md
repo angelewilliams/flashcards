@@ -3,7 +3,6 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [Prerequisites](#prerequisites)
 * [Using the App](#using-the-app)
 * [Technology](#technology)
 
@@ -14,13 +13,13 @@ Flashcards is the solo project of Module 2 for the Turing School of Software and
 The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
 
 
-### Using the App
+## Using the App
 
 Here is a quick video on how the game works.
 
 ![Flashcards Demo](https://media.giphy.com/media/aBTF77qPL74juIKaOx/giphy.gif)
 
-### Technology
+## Technology
 
 This project was written using JavaScript.
 
