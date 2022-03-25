@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
 
@@ -48,5 +47,5 @@ describe('Turn', function() {
     turn = new Turn('flamingo', card1);
     expect(turn.giveFeedback()).to.equal('incorrect!');
   });
-  
+
 });

@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
 const Deck = require('../src/Deck');
@@ -16,7 +15,6 @@ describe('Game', () => {
      deck = new Deck([card1, card2, card3]);
      round = new Round(deck);
      game = new Game();
-
   });
 
   it('should be a function', () => {

@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
 const Deck = require('../src/Deck');
@@ -46,7 +45,6 @@ describe('Round', () => {
   });
 
   it('takeTurn should store ids of incorrect guesses in an array', () => {
-
     round.takeTurn('sea otter');
     expect(round.incorrectGuesses).to.deep.equal([]);
     round.takeTurn('spleen');
