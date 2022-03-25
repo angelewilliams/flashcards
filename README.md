@@ -5,97 +5,32 @@
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
 * [Using the App](#using-the-app)
-* [Language](#language)
+* [Technology](#technology)
 
 ## Overview
 
-Flashcards is an initial solo project of Module 2 for the Turing School of Software and Design. The purpose of the project is to create an application where a user can play a round of flashcards with a given set of data.
+Flashcards is the solo project of Module 2 for the Turing School of Software and Design Front End Engineering Program. The purpose of the project is to create an application where a user can play a round of flashcards with a given set of data.
 
-The spec for this project can be found [here](https://media.giphy.com/media/aBTF77qPL74juIKaOx/giphy.gif).
+The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
 
 
 ### Using the App
 
 Here is a quick video on how the game works.
 
-[![Flashcards Demo](insertGifhere)
+![Flashcards Demo](https://media.giphy.com/media/aBTF77qPL74juIKaOx/giphy.gif)
 
-### Language
+### Technology
 
 This project was written using JavaScript.
 
 
 ## Deploy Instructions
-1. Fork repo
-2. Cloned the repo down
-3. Run npm install
-4. In the terminal, run node index.js via the command line
-5. Play the game as prompetd!
-
-## Fork This Repo
-
-On the top right corner of this page, click the **Fork** button.
-
-## Setup
-
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
-
+1. Fork repo: On the top right corner of this page, click the **Fork** button.
+2. Clone the repo down via your Terminal
 ```bash
-git clone [remote-address] [what you want to name the repo]
+git clone git@github.com:angelewilliams/flashcards.git [what you want to name the repo]
 ```
-
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
-
-```bash
-npm install
-```
-
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
-
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal:
-
-```bash
-Your project is running...
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
-
-```bash
-node index.js
-```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
+3. CD into your local version of the repo and run `npm install`
+4. Once that is complete, In the terminal, run `node index.js` via the command line
+5. Play the game as prompted! Using the `return` key to select your answer and move on to the next question.
